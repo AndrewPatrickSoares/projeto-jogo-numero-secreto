@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --font-family: 'Rubik', sans-serif;
+    --bg-color: #1A4D2E;
+    --cor-primaria: #FFFBF5;
+    --cor-transicao: #E7FBBE;
+    --texto-botao: #6096B4;
+    --bg-fim: #032535;
+    --cor-secundaria: #A0C334;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--cor-primaria);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.titulo {
+    font-size: 5em;
+}
+
+.indicador {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.box {
+    display: inline-block;
+    border: 5px outset var(--cor-primaria);
+    padding: 10px;
+    font-size: 5em;
+    margin: 20px;
+}
+
+.mensagem {
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+.acertou, .game-over {
+    font-size: 5em;
+}
+
+.resultado, .texto-fim {
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+
+.btn-jogar {
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--cor-primaria);
+    cursor: pointer;
+    color: var(--texto-botao);
+}
+
+.btn-jogar:hover {
+    background-color: var(--cor-transicao);
+    transition: 1s;
+}
+
+
+.game-over {
+    color: var(--cor-secundaria);
+}
+
+.btn-jogar-fim {
+    color: var(--bg-fim);
+    background-color: var(--cor-secundaria);
+}
+
